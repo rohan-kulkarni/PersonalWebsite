@@ -1,0 +1,64 @@
+<!-- <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
+<link href="./assets/css/font-awesome.min.css" rel="stylesheet">
+<link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="./assets/css/owl.carousel.css" rel="stylesheet">
+<link href="./assets/css/style.css" rel="stylesheet"> -->
+
+<header class="header">
+  <div class="container" >
+      <div class="row">
+          <div class="col-md-3">
+              <div class="profile-img">
+                  <img src="" class="img-responsive" alt=""/>
+                  <a href="#" class="btn btn default">Download My Resume</a>
+              </div>
+              <!-- Profile Image -->
+          </div>
+          <div class="col-md-9">
+              <div class="name-wrapper">
+                  <h1 class="name">{{about.first_name}} {{about.last_name}}</h1>
+                  <span>Web developer</span>
+            
+              </div>
+              <p>
+                {{about.description}}
+              </p>
+
+
+              <div class="row">
+                  <div class="col-md-3">
+                      <div class="personal-details">
+                          <strong>{{about.bday}}</strong>
+                          <small>BIRTH</small>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="personal-details">
+                          <strong>{{about.nationality}}</strong>
+                          <small>NATIONALITY</small>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="personal-details">
+                          <strong>{{about.language.Native}}</strong>
+                          <!--<ul>
+                            <li *ngfor="let other of about.language.Other"><strong>{{other}}</strong></li>
+                          </ul>-->
+                         
+                          <small>LANGUAGE</small>
+                      </div>
+                  </div>
+              </div>
+
+              <ul class="social-icon">
+                  <li><a href={{about.link_fb}}><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href={{about.link_linkedin}}><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href={{about.link_twitter}}><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                  <!-- <li><a href="about.link_fb"><i class="fa fa-slack" aria-hidden="true"></i></a></li>
+                  <li><a href="about.link_fb"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li> -->
+              </ul>
+          </div>
+      </div>
+  </div>
+</header>
+
