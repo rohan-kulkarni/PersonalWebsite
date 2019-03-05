@@ -14,7 +14,7 @@ export class EducationComponent implements OnInit {
     return this.education;
   }
   setAbout(data){
-    this.education=data[0];
+    this.education=data;
     console.log(this.education);
   }
   ngOnInit() {

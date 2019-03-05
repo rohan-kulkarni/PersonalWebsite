@@ -10,7 +10,8 @@ const port = 3000;
 
 const route = require('./routes/route.js');
 
-mongoose.connect("mongodb://localhost:27017/PersonalWebsite");
+// mongoose.connect("mongodb://localhost:27017/PersonalWebsite");
+mongoose.connect("mongodb://rohan:Jobolesonihal1@ds145659.mlab.com:45659/personal");
 
 
 // mongoose.connect("mongodb://rohan:rmk12345@cluster0-shard-00-00-dxviu.mongodb.net:27017,cluster0-shard-00-01-dxviu.mongodb.net:27017,cluster0-shard-00-02-dxviu.mongodb.net:27017/PersonalDetails?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true");

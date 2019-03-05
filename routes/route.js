@@ -46,6 +46,21 @@ router.get('/get_contact',(req,res,next)=>{
 	})
 });
 
+router.post('/addSkills',(req,res,next)=>{
+	"use strict";
+	let newdata=new skills({
+		name:req.body.name,
+		level:req.body.level,
+		type:req.body.type
+	});
+	newdata.save((err,data)=>{
+		if(err){
+			res.json({msg:'failed'});
+		}else{
+			res.json({msg:'added'});
+		}
+	});
+});
 
 router.post('/addProjects',(req,res,next)=>{
 	"use strict";
@@ -66,7 +81,7 @@ router.post('/addProjects',(req,res,next)=>{
 });
 router.post('/addContact',(req,res,next)=>{
 	"use strict";
-	let newdata=new data({
+	let newdata=new contact({
 		personalemail:req.body.personalemail,
 		phone:req.body.phone,
 		skype:req.body.skype,

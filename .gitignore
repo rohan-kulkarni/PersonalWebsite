@@ -2,7 +2,6 @@ Website/node_modules
 Website/.gitignore
 Website/e2e
 Website/.editorconfig
-Website/package.json
 Website/tsconfig.json
 Website/tslint.json
 Webiste/README.md

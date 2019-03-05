@@ -12,30 +12,29 @@
                   <div class="col-md-3">
                       <address>
                           <strong>Address</strong><br>
-                          1355 Market Street, Suite 900<br>
-                          San Francisco, CA 94103
+                          {{ contact.address}}
 
                       </address>
                   </div>
                   <div class="col-md-3">
                       <address>
                           <strong>Phone Number</strong><br>
-                          +61 3 8376 6284
+                          {{ contact.phone }}
                       </address>
                   </div>
-                  <div class="col-md-3">
-                      <address>
-                          <strong>Mobile Number</strong><br>
-                          987 654 321
-                      </address>
-                  </div>
+                  
                   <div class="col-md-3">
                       <address>
                           <strong>Email</strong><br>
-                          <a href="mailto:#">coffee@amelie.me</a>
+                          <a href="mailto:#">{{contact.personalemail}}</a>
                       </address>
                   </div>
-
+                  <div class="col-md-3">
+                    <address>
+                        <strong>Skype</strong><br>
+                        <a href="mailto:#">{{contact.skype}}</a>
+                    </address>
+                  </div>
               </div>
               <!--.row-->
 

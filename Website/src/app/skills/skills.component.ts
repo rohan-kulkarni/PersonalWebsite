@@ -14,7 +14,7 @@ export class SkillsComponent implements OnInit {
     return this.skills;
   }
   setAbout(data){
-    this.skills=data[0];
+    this.skills=data;
     console.log(this.skills);
   }
   ngOnInit() {

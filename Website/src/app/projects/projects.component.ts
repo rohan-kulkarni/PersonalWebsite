@@ -8,13 +8,14 @@ import { DataService } from '../data.service';
 })
 export class ProjectsComponent implements OnInit {
   projects:{};
+
   constructor(private DataService: DataService) {
   }
-  getAbout(){
+  getAbout(){  
     return this.projects;
   }
   setAbout(data){
-    this.projects=data[0];
+    this.projects=data;
     console.log(this.projects);
   }
   ngOnInit() {
@@ -22,3 +23,4 @@ export class ProjectsComponent implements OnInit {
   }
 
 }
+

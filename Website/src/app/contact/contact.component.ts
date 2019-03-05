@@ -17,7 +17,7 @@ export class ContactComponent implements OnInit {
     this.contact=data[0];
   }
   ngOnInit() {
-    this.DataService.getPersonalData().subscribe(data=>{this.setAbout(data)});  
+    this.DataService.getContactData().subscribe(data=>{this.setAbout(data)});  
   }
 
 }
